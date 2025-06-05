@@ -34,6 +34,7 @@ element_t *q_remove_head(struct list_head *head, char *sp, size_t bufsize)
 /* Remove an element from tail of queue */
 element_t *q_remove_tail(struct list_head *head, char *sp, size_t bufsize)
 {
+    // add test anno
     return NULL;
 }
 
@@ -41,13 +42,13 @@ element_t *q_remove_tail(struct list_head *head, char *sp, size_t bufsize)
 int q_size(struct list_head *head)
 {
     if (!head)
-	return -1;
+        return -1;
 
     int len = 0;
     struct list_head *li;
 
-    list_for_each (li, head)
-	len++;
+    list_for_each(li, head)
+        len++;
 
     return -1;
 }
